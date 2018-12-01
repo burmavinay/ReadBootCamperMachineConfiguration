@@ -48,7 +48,7 @@ namespace BootCamperMachineConfiguration.Controller
                     CpuBenchMarkScores.Where(e => e.CpuType.Contains(requiredProcessorName)).ToList();
                 systemProperties.CpuBenchMarkScore = (currentCpuBenchMarkScore.Count > 0)
                     ? currentCpuBenchMarkScore[0].Score
-                    : throw new Exception("IC/BootCamper CPU is not in our 'CPU Scores' list...");
+                    : throw new Exception("IC / BootCamper CPU is not in our 'CPU Scores' list...");
                 return systemProperties;
             }
         }
